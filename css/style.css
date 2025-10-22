@@ -1,0 +1,25 @@
+/* assets/style.css - simple, clean styles */
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, sans-serif; margin: 0; padding: 20px; background: #f5f7fb; color:#222; }
+.container { max-width: 900px; margin: 0 auto; }
+h1 { text-align: center; margin-bottom: 10px; }
+.add-note, .notes-list { background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.06); margin-bottom: 16px; }
+#addNoteForm input[type="text"], #addNoteForm textarea, #editNoteForm input[type="text"], #editNoteForm textarea {
+  width: 100%; padding: 10px; margin-bottom: 8px; border: 1px solid #ddd; border-radius: 6px;
+}
+#addNoteForm button, .modal-actions button, .note-actions button { padding: 8px 12px; border: none; border-radius:6px; cursor:pointer; }
+#addNoteForm button { background: #1f7aef; color: #fff; }
+.note { padding: 12px; border-bottom: 1px solid #eee; }
+.note:last-child { border-bottom: none; }
+.note-head { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.note-title { font-size: 1.05rem; }
+.note-content { margin: 8px 0; white-space: pre-wrap; }
+.note-actions button { margin-left:6px; background: #eee; }
+.note-actions .edit-btn { background: #ffd966; }
+.note-actions .delete-btn { background: #ff7b7b; color:#fff; }
+.empty { color:#666; padding:8px; }
+
+.modal { position: fixed; inset:0; display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,0.4); }
+.modal.hidden { display:none; }
+.modal-inner { background:#fff; padding:16px; border-radius:8px; width:90%; max-width:500px; }
+.modal-actions { display:flex; justify-content:flex-end; gap:8px; margin-top:8px; }
